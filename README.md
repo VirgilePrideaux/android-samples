@@ -1,2 +1,2 @@
 # android-samples
-a bunch of useful android code
+a bunch of useful android snippets
