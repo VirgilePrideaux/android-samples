@@ -1,10 +1,9 @@
-public class Dialogs {
-	
-	public static void alert(Context c, String title, String message, String button, OnClickListener callback) {
+public class Dialog {
+	public static void alert(Context c, String title, String message, String button, OnClickListener callBack) {
 		AlertDialog.Builder b = new AlertDialog.Builder(c);
 		b.setTitle(title);
 		b.setMessage(message);
-		b.setNeutralButton(button, callback);
+		b.setNeutralButton(button, callBack);
 		b.create().show();
 	}
 	

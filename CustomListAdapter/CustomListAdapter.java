@@ -1,5 +1,4 @@
 public class CustomListAdapter extends ArrayAdapter<MyItem> {
-
     private Context context;
 
     public CustomListAdapter(Context context, List<MyItem> list) {
@@ -15,8 +14,8 @@ public class CustomListAdapter extends ArrayAdapter<MyItem> {
 		
         MyItem item = getItem(position);
 		
-	TextView title = (TextView) convertView.findViewById(R.id.textViewTitle);
-	title.setText(item.getTitle() + position);
+		TextView title = (TextView) convertView.findViewById(R.id.textViewTitle);
+		title.setText(item.getTitle() + position);
 		
         return convertView;
     }

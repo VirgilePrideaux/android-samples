@@ -1,17 +1,11 @@
 public class ExampleFragment extends Fragment {
-	
-	private Context	context;
-	private View	rootView;
+	private Context context;
+	private View rootView;
 	
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
-	        super.onActivityCreated(savedInstanceState);
-			
-		/*
-		** Here you may start accessing views from rootView
-		** rootView.findViewById(...);
-		*/
-    	}
+		super.onActivityCreated(savedInstanceState);
+	}
 
 	@Override
 	public void onAttach(Activity activity) {

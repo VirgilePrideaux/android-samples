@@ -1,5 +1,5 @@
 public class MainActivity extends Activity {
-@Override
+	@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -19,4 +19,5 @@ public class MainActivity extends Activity {
 		getFragmentManager().popBackStack();
 		// eventually commit the transaction
 		transaction.commit();
+	}
 }

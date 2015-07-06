@@ -1,5 +1,4 @@
 public class Preferences {
-
 	private static SharedPreferences get(Context context) {
 		return context.getSharedPreferences(Constant.APP_TAG, Context.MODE_PRIVATE);
 	}
