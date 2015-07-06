@@ -16,7 +16,7 @@ public class MainActivity extends Activity {
 	public void invertImage(byte[] data, int camWidth, camHeight) {
 		int[] pixels = BitmapConvert.applyGrayScale(data, camWidth, camHeight);
 		Bitmap bm = Bitmap.createBitmap(pixels, camWidth, camHeight, Bitmap.Config.ARGB_8888);
-		bm = BitmapConvert.createInvertedBitmap(bm, size.width, size.height);
+		bm = BitmapConvert.createInvertedBitmap(bm, camWidth, camHeight);
 		pixels = new int[camWidth * camHeight];
 		bm.getPixels(pixels, 0, bm.getWidth(), 0, 0, bm.getWidth(), bm.getHeight());
 		encodeYUV420SP(data, pixels, bm.getWidth(), bm.getHeight());
