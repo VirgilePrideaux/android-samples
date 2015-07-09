@@ -6,11 +6,11 @@ import android.content.Context;
 import android.content.DialogInterface;
 
 public class Dialog {
-    public static void alert(Context c, String title, String message, String button, DialogInterface.OnClickListener callBack) {
+    public static void alert(Context c, String title, String message, DialogInterface.OnClickListener callBack) {
         AlertDialog.Builder b = new AlertDialog.Builder(c);
         b.setTitle(title);
         b.setMessage(message);
-        b.setNeutralButton(button, callBack);
+        b.setNeutralButton(c.getString(android.R.string.ok), callBack);
         b.create().show();
     }
 
