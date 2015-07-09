@@ -1,4 +1,5 @@
 public class ExampleFragment extends Fragment {
+	
 	private Context context;
 	private View rootView;
 	
