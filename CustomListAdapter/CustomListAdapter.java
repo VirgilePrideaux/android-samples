@@ -1,4 +1,5 @@
 public class CustomListAdapter extends ArrayAdapter<MyItem> {
+	
     private Context context;
 
     public CustomListAdapter(Context context, List<MyItem> list) {
